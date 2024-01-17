@@ -12,7 +12,56 @@
       ],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [],
+          "additionalAuthenticationProviders": [
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-01-23T20:46:55.337Z",
+                "apiKeyExpirationDays": 7,
+                "description": ""
+              },
+              "authenticationType": "API_KEY"
+            },
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-01-23T22:17:03.219Z",
+                "apiKeyExpirationDays": 7,
+                "description": ""
+              },
+              "authenticationType": "API_KEY"
+            },
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-01-23T22:38:05.798Z",
+                "apiKeyExpirationDays": 7,
+                "description": "img"
+              },
+              "authenticationType": "API_KEY"
+            },
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-01-23T22:39:03.853Z",
+                "apiKeyExpirationDays": 7,
+                "description": "img"
+              },
+              "authenticationType": "API_KEY"
+            },
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-01-23T22:41:28.120Z",
+                "apiKeyExpirationDays": 7,
+                "description": ""
+              },
+              "authenticationType": "API_KEY"
+            },
+            {
+              "apiKeyConfig": {
+                "apiKeyExpirationDate": "2024-01-23T22:43:06.758Z",
+                "apiKeyExpirationDays": 7,
+                "description": "api"
+              },
+              "authenticationType": "API_KEY"
+            }
+          ],
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
@@ -49,6 +98,13 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "storage": {
+    "imagestorage": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
     }
   }
 }
